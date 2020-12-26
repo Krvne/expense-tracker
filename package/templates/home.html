@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{%block page%}Home{%endblock%}
+{% block content %}
+<div class="py-3" align='center'>
+
+    <h1><strong>Welcome to the <c style="color: #da8300;">TECH HUB</c>!</strong></h1>
+    <h3>What would you like to do today?</h3>
+    <br>
+    <p>Select an option below...</p>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-4 pt-1 pb-4">
+            <div class="card border filled card-width">
+                <a href="{{url_for('main.loan')}}"><img src="../static/img/loan.png" class="op50 card-img-top"
+                        alt="loan.jpg"></a>
+                <div class="">
+                    <a href="{{url_for('main.loan')}}" class="btn sm-btn btn-success bton-centered"><b>Loan an
+                            Item</b></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" style="width: 1rem;"></div>
+
+        <div class="col-md-4 pt-1">
+            <div class="card border filled card-width">
+                <a href="{{url_for('main.returnItem')}}"><img src="../static/img/return.png" class="op50 card-img-top"
+                        alt="loan.jpg"></a>
+                <div class="">
+                    <a href="{{url_for('main.returnItem')}}" class="btn sm-btn btn-primary bton-centered"><b>Return an
+                            Item</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
