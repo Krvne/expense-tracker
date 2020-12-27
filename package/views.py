@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, redirect, flash, url_for
-from .forms import LoanForm, LaptopNumber, ReturnForm
-from .models import Entry
+
+# from .forms import
+# from .models import
 from . import db
 from datetime import datetime
 

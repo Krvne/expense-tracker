@@ -1,4 +1,4 @@
-from kiosk import db, create_app
+from package import db, create_app
 
 ## -------------< Cute little function to re-init the database easier >------------- ##
 app = create_app()
